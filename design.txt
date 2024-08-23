@@ -1,0 +1,27 @@
+Design and development of to-do-app
+
+This document outlines designing and development process of the application, it also describes chellenges and solutions
+to those challenges. It also points out the concepts, ideas, anything useful learned in the process of developing this application.
+
+
+General design direction
+    1. Make it as modular as possible, taking "single responsibility" as the main directive in the development process
+    2. Adhear to the best practices and naming conventions
+    3. Most importantly, be curious and learn since the reason for this app is 1 learning and 2 solving my own problems
+        with my own software solutions
+
+
+App design principles:
+    Model view delegate
+
+
+Data storage
+    SQLite
+
+
+Learning points
+    1. Model-View-Controller
+    2. SQLite
+    3. Git
+    4. Problem solving
+    5. Debugging
