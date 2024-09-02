@@ -1,13 +1,21 @@
-from model.tasks_model import TasksModel, Task
-from view.tasks_view import TaskView
-from controller.tasks_controller import TasksController
+from model.tasks_model import TasksModel
+# from view.tasks_view import TaskView
+# from controller.task_delegate import TaskDelegate
+from PyQt6.QtWidgets import QApplication
+from view.main_window import MainWindow
+
+import sys
 
 def main():
-    app = QApplication([])
-    model = TasksModel([Task("Task 1", "Description 1"), Task("Task 2", "Description 2")])
-    view = TaskView(model)
-    controller = TaskController(model, view)
+    app = QApplication(sys.argv)
+
+    model = TasksModel()
+    view = MainWindow(model)
+    # listViewDelegate = TaskDelegate() # has been initialized during main window creation
+
     view.show()
+    
+    # Exit program upon press on 'x' button
     sys.exit(app.exec())
 
 if __name__ == "__main__":
