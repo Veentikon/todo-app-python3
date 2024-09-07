@@ -10,3 +10,7 @@ depricated_code/data_base.py
 view/test/power_bar_test.py
 view/test/task_box_test.py
 view/test/power_bar_test.py
+view/__pycache__/*
+model/__pycache__/*
+controller/__pycache__/*
+__pycache__/*
